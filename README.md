@@ -1,2 +1,2 @@
 # TerminalNote
-record common operation in Android Studio Terminal
+record common command in Android Studio Terminal
