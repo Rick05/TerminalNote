@@ -1,0 +1,5 @@
+adb kill-server
+¹Ø±Õadb
+
+adb start-server
+Æô¶¯adb
