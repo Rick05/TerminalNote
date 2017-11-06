@@ -1,0 +1,8 @@
+netstat -aon|findstr 5037
+查看占用指定端口的进程，5037为端口号
+
+tasklist /fi "pid eq 6780"
+查看指定进程的信息，6780为进程的pid
+
+taskkill /pid 6780 /f
+结束指定进程，6780为进程的pid

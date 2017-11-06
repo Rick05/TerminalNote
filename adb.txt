@@ -3,3 +3,36 @@ adb kill-server
 
 adb start-server
 启动adb
+
+adb shell am force-stop packageName
+结束指定包名应用的运行，和去设置里强制停止效果一样
+
+
+
+adb shell pm clear packageName
+清除指定包名应用的数据，和去设置里清除数据效果一样
+
+adb shell dumpsys activity activities/services/providers/broadcasts/intents/processes
+查看Activity/Service/ContentProvider/BraodcastReceiver/Intent/进程信息
+
+adb shell dumpsys window w
+dump当前的窗口列表，如果你屏幕上有一个悬浮窗，这个命令可以告诉你这个悬浮窗是哪个应用启动的
+
+adb shell dumpsys -l
+列出dumpsys支持的所有命令
+
+adb shell ps
+列出当前手机的进程列表
+
+
+
+adb install -r apk路径
+命令行安装应用
+
+
+
+adb uninstall pkgName
+命令行卸载指定包名的应用
+
+adb shell am/adb shell pm
+对应AMS和PMS里的常用功能，子命令很多
